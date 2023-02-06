@@ -17,7 +17,6 @@ async def wait_random(max_delay: int = 10) -> int:
     """
     Coroutine takes an argument and returns a random number
     in the range of the argument
-    
     Args: max_delay (int)
     Return: int
     """
