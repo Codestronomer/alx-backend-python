@@ -10,7 +10,7 @@ import asyncio
 import random
 
 
-async def wait_random(max_delay: int = 10) -> int:
+async def wait_random(max_delay: int = 10) -> float:
     """
     Coroutine takes an argument and returns a random number
     in the range of the argument
@@ -19,7 +19,7 @@ async def wait_random(max_delay: int = 10) -> int:
         max_delay (int -> optional)
 
     Return:
-        int
+        float
     """
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
